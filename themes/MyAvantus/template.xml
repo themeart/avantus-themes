@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Template isFullResponsive="true">
+    <Name>MyAvantus</Name>
+    <Author>Themeart GmbH</Author>
+    <URL>https://www.themeart.de</URL>
+    <Parent>Avantus</Parent>
+    <MinShopVersion>5.8.4</MinShopVersion>
+    <Version>1.0.0</Version>
+    <Preview>preview-layout.png</Preview>
+    <Description>Child-Template für eigene Struktur-, CSS- und JavaScript-Anpassungen. Erbt alle Funktionen und Einstellungen von Avantus.</Description>
+    <Framework>Bootstrap4</Framework>
+    <!-- JTL appends these files to the inherited Avantus resource groups. -->
+    <Minify>
+        <CSS Name="light.css">
+            <File Path="css/custom.css"/>
+        </CSS>
+        <CSS Name="dark.css">
+            <File Path="css/custom.css"/>
+        </CSS>
+    </Minify>
+</Template>

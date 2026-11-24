@@ -1,0 +1,28 @@
+/*
+ * Eigene CSS-Anpassungen für MyAvantus.
+ * Einbindung einmalig über template.xml, für Light und Dark.
+ * Reines CSS benötigt keine SCSS-Kompilierung.
+ * Die folgenden Beispiele sind vollständig auskommentiert.
+ */
+
+/* Gemeinsame Anpassungen für beide Darstellungen:
+html:root {
+    --av-control-radius: .5rem;
+}
+*/
+
+/* Nur Light:
+ * html:root hält die Anpassungen auch gegenüber einer später geladenen
+ * Avantus-Palette wirksam. Vorhandene --av-* Variablen verwenden.
+html:root[data-avantus-theme="light"] {
+    --av-page-background: #ffffff;
+    --av-page-text: #242424;
+}
+*/
+
+/* Nur Dark:
+html:root[data-avantus-theme="dark"] {
+    --av-page-background: #161616;
+    --av-page-text: #eeeeee;
+}
+*/
